@@ -1,5 +1,5 @@
 from __future__ import absolute_import
-from tensorflow import *
+#from tensorflow import *
 
 from .sg_util import sg_opt
 from .sg_main import *
