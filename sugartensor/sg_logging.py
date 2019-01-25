@@ -167,8 +167,9 @@ def _pretty_name(tensor):
 
 def _scalar(name, tensor):
     if not tf.get_variable_scope().reuse and not tf.sg_get_context().reuse:
-        val = gen_logging_ops.summary.scalar(name, tensor)
-        tf.add_to_collection(tf.GraphKeys.SUMMARIES, val)
+        #val = gen_logging_ops.summary.scalar(name, tensor)
+        #tf.add_to_collection(tf.GraphKeys.SUMMARIES, val)
+        xjiko=1
 
 
 def _histogram(name, tensor):
