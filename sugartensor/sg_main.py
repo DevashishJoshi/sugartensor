@@ -42,7 +42,7 @@ def sg_global_step():
 # global phase(train or infer) flag
 #
 
-_phase = tf.Variable(False, name='phase', trainable=False, collections=[tf.GraphKeys.LOCAL_VARIABLES])
+_phase = tf.Variable(False, name='phase', trainable=False)#, collections=[tf.GraphKeys.LOCAL_VARIABLES])
 
 
 def sg_phase():
