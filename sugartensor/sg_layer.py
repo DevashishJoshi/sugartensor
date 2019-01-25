@@ -49,7 +49,7 @@ def sg_dense(tensor, opt):
     """
     # parameter initialize
     w = tf.sg_initializer.he_uniform('W', (opt.in_dim, opt.dim),
-                                     regularizer=opt.regularizer, summary=opt.summary)
+                                     regularizer=opt.regularizer)#, summary=opt.summary)
     b = tf.sg_initializer.constant('b', opt.dim, summary=opt.summary) if opt.bias else 0
 
     # apply transform
